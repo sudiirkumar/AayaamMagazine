@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Section</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Magazine Section</h1>
+
+    <!-- Search Bar and Filters -->
+    <div class="controls">
+        <div>
+            <input type="text" id="searchInput" placeholder="Search for magazines..." onkeyup="filterAndSortMagazines()">
+            <select id="filterCriteria" onchange="filterAndSortMagazines()">
+                <option value="title">Title</option>
+                <option value="publication-date">Publication Date</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+        <div>
+            <label>Sort by</label>
+            <select id="sortCriteria" onchange="filterAndSortMagazines()">
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="title-desc">Title (Z-A)</option>
+                <option value="date-asc">Publication Date (Oldest First)</option>
+                <option value="date-desc">Publication Date (Newest First)</option>
+                <option value="popularity-asc">Popularity (Low to High)</option>
+                <option value="popularity-desc">Popularity (High to Low)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="magazine-list" id="magazineList">
+        <a style="text-decoration:none" href="https://issuu.com/aayaamhindicell/docs/pratibimb_2019" class="magazine-item" data-date="2019-02-27" data-popularity="8">
+            <img src="magazine-cover1.png" alt="pratibimb_2019" class="cover-image">
+            <h3 class="magazine-title">प्रतिबिम्ब २०१९</h3>
+            <p class="publication-date">Published on: February 27, 2019</p>
+            <p class="description">NIT Trichy's Annual Hindi Magazine of 2019</p>
+        </a>
+
+        <a style="text-decoration: none;" href="https://issuu.com/aayaamhindicell/docs/pratibimb_2022" class="magazine-item" data-date="2022-04-13" data-popularity="5">
+            <img src="magazine-cover2.png" alt="pratibimb_2022" class="cover-image">
+            <h3 class="magazine-title">प्रतिबिम्ब २०२२</h3>
+            <p class="publication-date">Published on: April 13, 2022</p>
+            <p class="description">NIT Trichy's Annual Hindi Magazine of 2022</p>
+        </a>
+
+        <a style="text-decoration: none;" href="https://issuu.com/aayaamhindicell/docs/pratibimb_2016" class="magazine-item" data-date="2016-01-17" data-popularity="10">
+            <img src="magazine-cover3.png" alt="pratibimb_2016" class="cover-image">
+            <h3 class="magazine-title">प्रतिबिम्ब २०१६</h3>
+            <p class="publication-date">Published on: January 17, 2016</p>
+            <p class="description">NIT Trichy's Annual Hindi Magazine of 2016</p>
+        </a>
+    </div>
+
+    <div class="no-results" id="noResultsMessage" style="display: none;">
+        No magazines found.
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
