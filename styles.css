@@ -4,8 +4,6 @@ body {
     margin: 0;
     padding: 20px;
 }
-
-/* Header Styling */
 .main-header {
     text-align: center;
     padding: 20px 0;
@@ -28,8 +26,6 @@ body {
     font-weight: 300;
     opacity: 0.8;
 }
-
-/* Controls Styling */
 .controls {
     display: flex;
     flex-direction: column;
@@ -46,8 +42,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Magazine List Styling */
 .magazine-list {
     display: flex;
     flex-wrap: wrap;
@@ -68,8 +62,6 @@ body {
 .magazine-item:hover {
     transform: translateY(-5px);
 }
-
-/* Magazine Item Styling */
 .cover-image {
     width: 100%;
     height: auto;
@@ -94,8 +86,6 @@ body {
     color: #555;
     line-height: 1.6em;
 }
-
-/* No Results Styling */
 .no-results {
     text-align: center;
     font-size: 3em;
