@@ -6,7 +6,7 @@ body {
 }
 .main-header {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     background-color: #34495e;
     color: #fff;
     border-radius: 8px;
@@ -23,7 +23,7 @@ body {
 .subtitle {
     font-size: 1.2em;
     margin-top: 10px;
-    font-weight: 300;
+    font-weight: 200;
     opacity: 0.8;
 }
 .controls {
